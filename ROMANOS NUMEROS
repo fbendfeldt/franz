@@ -1,0 +1,55 @@
+import os
+def Membrete():
+    os.system("clS")
+    print("********************************")
+    print("*** Programam unidades, decenas ,centenas:********")
+    print("****Franz Gerald Bendfeldt Zet********")
+    print("*****Guatemala 17/08/2017********")
+def unidades(numero):
+    return int(numero-(miles(numero)*1000+centenas(numero)*100+decenas(numero)*10))
+if u>0 and u<4:
+    for i in range(0,u):
+            print("I")
+    if (u==4):
+        print("IV")
+    if (u==9):
+       print("IX")
+    if (u>=5 and u<9):
+        print("v")
+        for i in range(0,u-5):
+            print("I")  
+
+def decenas(numero):
+    return int((numero-(miles(numero)*1000+centenas(numero)*100))/10)
+    if d>0 and d<4:
+        for i in range(0,d):
+            print("x")
+    if (d==4):
+       print("Xl")
+    if (d==9):
+        print("XC")
+    if (d>=5 and d<9):
+        print("L")
+        for i in range(0,d-5):
+            print("x")
+    
+def centenas(numero):
+    return int((numero-miles(numero)*1000)/100)
+c=0
+
+if c>0 and c<4:
+        for i in range(0,c):
+            print("C")
+        if (c==4):
+           print("CD")
+        if (c==9):
+            print("CM")
+        if (c>=5 and c<9):
+            print("D")
+for i in range(0,c-5):
+            print("C")
+def miles(numero):
+    return int(numero/1000)
+for i in range(0,m):
+print("M")
+Membrete(Miles(m),centenas,(c),decenas(d),unidades(u))
